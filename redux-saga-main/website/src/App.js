@@ -1,14 +1,9 @@
 import './App.css';
-import { useDispatch, useSelector } from 'react-redux';
-import { getUsersFetch } from './actions';
 import { useState } from "react";
 import {Task} from "./Task"
 import React from 'react';
 
 function App() {
-  const dispatch = useDispatch();
-  const users = useSelector(state => state.myFirstReducer.users)
-  
   const [todoList, setTodoList] = useState([]);
   const [newTask, setNewTask] = useState("");
 
